@@ -137,7 +137,7 @@ celerybeat.pid
 # Environments
 .env
 .envrc
-!.vent/Lib
+!.venv/Lib
 .venv/Lib/execute.bat
 env/
 venv/
