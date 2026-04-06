@@ -206,3 +206,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# PySide
+.venv/Lib/site-packages/pyside*
+.venv/Lib/site-packages/PySide*
