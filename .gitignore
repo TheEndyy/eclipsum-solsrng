@@ -207,6 +207,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# PySide
+# PySide (weights a lot)
 .venv/Lib/site-packages/pyside*
 .venv/Lib/site-packages/PySide*
+
+src\ui\test.py
