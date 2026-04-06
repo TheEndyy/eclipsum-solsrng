@@ -1,0 +1,27 @@
+{
+  "tab_order": [
+    "Macro",
+    "Settings",
+    "Webhook",
+    "Customization",
+    "Credits"
+  ],
+  "tab_labels": {
+    "Macro": "Macro",
+    "Settings": "Settings",
+    "Webhook": "Webhook",
+    "Customization": "Customization",
+    "Credits": "Credits"
+  },
+  "widget_placement": {
+    "macro_status": "Macro",
+    "macro_hotkey": "Macro",
+    "macro_delay": "Macro",
+    "settings_toggles": "Settings",
+    "settings_speed": "Settings",
+    "webhook_url": "Webhook",
+    "webhook_message": "Webhook",
+    "webhook_send": "Webhook",
+    "credits_info": "Credits"
+  }
+}
