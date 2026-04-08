@@ -5,6 +5,7 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel
 from PySide6.QtCore import Qt
 import eclipsum_utils
+import qasync
 import INFO
 
 class Window(QMainWindow):
@@ -12,7 +13,7 @@ class Window(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("test")
-        self.setGeometry(160, 90, 160, 90)
+        self.setGeometry(160, 90, 250, 115)
 
         label = QLabel(text=f"{INFO.VERSION}")
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -20,9 +21,14 @@ class Window(QMainWindow):
 
 def main():
     app = QApplication(sys.argv)
+    loop = qasync.QEventLoop(app)
     window = Window()
     window.show()
-    sys.exit(app.exec())
+    
+    try:
+        loop.run_forever()
+    except:
+        pass
 
 
 if __name__ == "__main__":

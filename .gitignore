@@ -207,8 +207,11 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# PySide (weights a lot)
-.venv/Lib/site-packages/pyside*
-.venv/Lib/site-packages/PySide*
+# Venv packages
+.venv/Lib/site-packages/*
+!.venv/Lib/site-packages/pip*
+# Exclude below
 
-src\ui\test.py
+
+# Random stuff
+src\ui
